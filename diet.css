@@ -1,0 +1,132 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #000;
+    color: #FFD700;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+.header {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #222;
+    border-bottom: 2px solid #FFD700;
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 3rem;
+    color: #FFD700;
+    animation: fadeIn 2s ease-in-out;
+}
+
+.header p {
+    font-size: 1.2rem;
+    color: #fff;
+    animation: fadeIn 3s ease-in-out;
+}
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    flex-wrap: wrap;
+}
+
+.diet-plan, .nutrition-tips, .consultation, .weekly-diet {
+    background-color: #333;
+    border: 2px solid #FFD700;
+    border-radius: 10px;
+    padding: 20px;
+    width: 80%;
+    margin: 20px 0;
+    color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    animation: slideIn 2s ease-in-out;
+}
+
+.diet-plan h2, .nutrition-tips h2, .consultation h2, .weekly-diet h2 {
+    color: #FFD700;
+    margin-bottom: 10px;
+}
+
+.diet-plan ul, .weekly-diet ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.diet-plan li, .weekly-diet li {
+    margin: 10px 0;
+    font-size: 1rem;
+    color: #fff;
+}
+
+.nutrition-tips p, .consultation p {
+    font-size: 1rem;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.consultation button {
+    background-color: #FFD700;
+    color: #000;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.consultation button:hover {
+    background-color: #fff;
+}
+
+.diet-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.diet-table th, .diet-table td {
+    border: 2px solid #FFD700;
+    padding: 10px;
+    text-align: center;
+    background-color: #333;
+    color: #fff;
+}
+
+.diet-table th {
+    background-color: #444;
+    color: #FFD700;
+}
+
+.footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #222;
+    border-top: 2px solid #FFD700;
+    color: #FFD700;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateY(50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}

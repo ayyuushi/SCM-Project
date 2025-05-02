@@ -1,0 +1,449 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+#allover{
+    overflow: hidden;
+}
+#newdiv {
+    
+    background-image: url('gym.jpg');
+    background-size: cover;
+    background-position: center;
+    
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+#navs{
+    border-bottom: 2px solid gold;
+    position:fixed;
+    background-color: #000000;
+    z-index: 1;
+}
+
+body::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6); 
+    z-index: -1;
+}
+
+
+nav {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    padding: 20px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.7);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4); 
+}
+
+nav h1 {
+    color: #f0db4f;
+    font-size: 2rem;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-weight: bold;
+    
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin: 0 20px;
+    position: relative;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    position: relative;
+    transition: color 0.3s ease-in-out;
+}
+
+nav ul li a:hover {
+    color: #f0db4f;
+}
+
+
+nav ul li a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background: #f0db4f;
+    left: 0;
+    bottom: -5px;
+    transition: width 0.3s ease-in-out;
+}
+
+nav ul li a:hover::after {
+    width: 100%;
+}
+
+nav button {
+    padding: 10px 20px;
+    border: none;
+    background: linear-gradient(135deg, #f0db4f, #ffcc00);
+    color: #000000;
+    font-size: 1rem;
+    text-transform: uppercase;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s;
+}
+
+nav button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3); /* Lift on hover */
+    background: linear-gradient(135deg, #ffffff, #ffcc00);
+}
+
+.container {
+    text-align: center;
+    animation: fadeIn 2s ease-in-out forwards;
+    padding: 0 20px;
+    max-width: 1200px;
+}
+
+.container h1 {
+    font-size: 5rem;
+    font-weight: bold;
+    color: #f0db4f;
+    letter-spacing: 5px;
+    margin: 20px 0;
+    text-transform: uppercase;
+    text-shadow: 3px 3px 15px rgba(0, 0, 0, 0.7); 
+}
+
+.container h2 {
+    font-size: 3rem;
+    color: #ffffff;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.6);
+}
+
+.container p {
+    font-size: 1.4rem;
+    color: #ffffff;
+    margin-bottom: 40px;
+    line-height: 1.8;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+}
+
+
+.container button {
+    padding: 15px 40px;
+    border: none;
+    background: linear-gradient(135deg, #f0db4f, #ffcc00);
+    color: #000000;
+    font-size: 1.2rem;
+    cursor: pointer;
+    text-transform: uppercase;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease-in-out;
+}
+
+.container button:hover {
+    background: linear-gradient(135deg, #ffffff, #ffcc00);
+    transform: scale(1.05);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3); 
+}
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.container h1:hover {
+    animation: glow 1.5s infinite alternate;
+}
+
+@keyframes glow {
+  from {
+      text-shadow: 0 0 10px #f0db4f, 0 0 20px #ffcc00, 0 0 30px #ffcc00, 0 0 40px #ffcc00;
+  }
+  to {
+      text-shadow: 0 0 20px #ffcc00, 0 0 30px #ffcc00, 0 0 40px #f0db4f, 0 0 50px #f0db4f;
+  }
+}
+@media (max-width: 768px) {
+  nav ul {
+      flex-direction: column;
+      text-align: center;
+  }
+
+  nav ul li {
+      margin: 10px 0;
+  }
+
+  .container h1 {
+      font-size: 3rem;
+  }
+
+  .container h2 {
+      font-size: 2rem;
+  }
+
+  .container button {
+      padding: 10px 30px;
+  }
+}
+#anc{
+    text-decoration: none;
+    color:black;
+}
+#id{
+    height:500px;
+    display:flex;
+    background-color: #000000;
+    padding-top: 100px;
+    padding-left: 250px;
+    border-top: 5px solid gold;
+}
+#aid{
+    height: 400px;
+    width:  650px;
+    background-image: url("https://media.istockphoto.com/id/1391410249/photo/sports-and-gym-activities.jpg?s=612x612&w=0&k=20&c=1S-hAmT-CkRtdYV_hcKi1lZdQkXAN_mCy3ebIXlUEnE=");
+    background-size: cover;
+    border-radius: 10%;
+    border: 3px solid gold;
+}
+#bid{
+    width:400px;
+    font-family: 'Times New Roman', Times, serif;
+    margin: 20px;
+    margin-top: 100px;
+    margin-left: 300px;
+    text-align: center;
+    color:white;
+
+}
+
+
+#ids{
+    height:500px;
+    display:flex;
+    background-color: #000000;
+    padding-top: 100px;
+    padding-left: 250px;
+    border-top: 5px solid gold;
+}
+#aids{
+    height: 400px;
+    width:  650px;
+    background-image: url("https://png.pngtree.com/thumb_back/fh260/background/20240506/pngtree-fitness-club-weight-training-equipment-gym-modern-interior-image_15725062.jpg");
+    background-size: cover;
+    border-radius: 10%;
+    border:3px solid gold;
+    
+}
+#bids{
+    width:400px;
+    font-family: 'Times New Roman', Times, serif;
+    margin: 20px;
+    margin-top: 100px;
+    margin-left: 300px;
+    text-align: center;
+    color:white;
+}
+#last{
+background-color: black;
+height:500px;
+width:100%;
+display:flex;
+justify-content: space-around;
+border-top: 3px solid gold;
+text-align: center;
+
+}
+#p{
+display:flex;
+text-align: center;
+justify-content: center;
+background-color: #000000;
+color: #ffffff;
+font-size: large;
+border-top:3px solid #f0db4f;
+}
+#one{
+width:350px;
+height:350px;
+background-image: url("https://www.shutterstock.com/image-photo/personal-trainer-beard-looking-into-260nw-1969769617.jpg");
+background-size: cover;
+margin-top: 80px;
+border-radius: 15%;
+border: 3px solid gold;
+transition:transform 0.3s ease-in-out;
+
+
+}
+#two{
+width:350px;
+height:350px;
+background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRpxGkmBc_2MZ70zDT5BMKDJDZfCwb5Kwe5NA&s");
+background-size: cover;
+margin-top: 80px;
+border-radius: 15%;
+border: 3px solid gold;
+transition:transform 0.3s ease-in-out;
+}
+
+#three{
+width:350px;
+height:350px;
+background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsj0vRpNo3ZHRExS_LD58ZdoMMnU6LAfmMCTe82kha8Q6JrsX7bl899sfZhyckxGs8hG0&usqp=CAU");
+background-size: cover;
+margin-top: 80px;
+border-radius: 15%;
+border: 3px solid gold;
+transition:transform 0.3s ease-in-out;
+}
+#one1{
+    color: #ffffff;
+    font-size: 40px;
+   
+}
+#two2{
+    color: #ffffff;
+    font-size: 40px;
+}
+#three3{
+    color: #ffffff;
+    font-size: 40px;
+}
+#one:hover{
+    transform: translateY(-20px);
+}
+#two:hover{
+    transform: translateY(-20px);
+}
+#three:hover{
+    transform: translateY(-20px);
+}
+
+@keyframes slide {
+    0%{
+        background-image: url("https://www.instituteofpersonaltrainers.com/uploads/2/2/0/1/22014694/gym-success-story_orig.jpg");
+    }
+    25%{
+        background-image: url("https://hyatttraining.com/static/uploads/2018/05/hyatt-training-success-story-mazyar-afshar.jpg");
+    }
+    50%{
+        background-image: url("https://nrpt.co.uk/public/images/img_inspiringfitness2.jpg");
+    }
+    75%{
+        background-image: url("https://www.ghfc.com/uploads/images/Charles_Testimonial_homepage-02.jpg");
+    }
+    100%{
+        background-image: url("https://strengthsanctuary.com.au/wp-content/uploads/2023/07/personal-training-1024x576.webp");
+    }
+}
+#slider{
+    height: 420px;
+    width:800px;
+    background-image: url("https://www.instituteofpersonaltrainers.com/uploads/2/2/0/1/22014694/gym-success-story_orig.jpg");
+    border-radius: 10%;
+    animation: slide 30s 0.5s infinite;
+    background-size: cover;
+    
+
+}
+#slider:hover{
+    border:4px solid gold;
+}
+#slides{
+    width: 100%;
+    height: 500px;;
+    background-color: #000000;
+    display:flex;
+    justify-content: center;
+    color:#ffffff;
+
+} *
+footer {
+    background: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-content {
+    max-width: 800px;
+    margin: auto;
+}
+
+.footer-content h3 {
+    margin: 0;
+    padding-bottom: 10px;
+    font-size: 24px;
+}
+
+.footer-content p {
+    margin: 10px 0;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.footer-content .socials {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.footer-content .socials li {
+    margin: 0 10px;
+}
+
+.footer-content .socials li a {
+    color: #fff;
+    font-size: 18px;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-content .socials li a:hover {
+    color: #f39c12;
+}
+
+.footer-bottom {
+    background: #222;
+    padding: 10px 0;
+}
+
+.footer-bottom p {
+    margin: 0;
+    font-size: 12px;
+}
+#least{
+    color:white;
+    padding: 100px;
+    background-color: black;
+}
+#int1{
+    color:#ffffff;
+    text-align: center;
+}

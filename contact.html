@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="contact.css">
+</head>
+
+<body>
+    <div class="container">
+        <header class="header">
+            <h1 id="heading">Contact The Fitness Crew</h1>
+            <p>We're here to help you with your fitness journey. Whether you have questions, need support, or just want to say hello, we're all ears!</p>
+        </header>
+
+        <main class="main-content">
+            <div class="contact-form">
+                <h2>Get in Touch</h2>
+                <form>
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" >
+                    
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                    
+                    <label for="phone">Phone</label>
+                    <input type="tel" id="phone" name="phone" required pattern="\d{10}" maxlength="10" title="Please enter a 10-digit phone number.">
+
+                    
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                    
+                    <button type="submit">Send Message</button>
+                </form>
+            </div>
+
+            <div class="contact-info">
+                <h2>Contact Information</h2>
+                <p><strong>Address:</strong> 123 Fitness St, Wellness City, Healthland</p>
+                <p><strong>Phone:</strong> (123) 456-7890</p>
+                <p><strong>Email:</strong> contact@fitnesscrew.com</p>
+                <p><strong>Working Hours:</strong> Mon-Fri: 6am - 10pm, Sat-Sun: 8am - 8pm</p>
+            </div>
+
+            <div class="social-media">
+                <h2>Follow Us</h2>
+                <p>Stay connected with us on social media for the latest updates, fitness tips, and inspiration.</p>
+                <p><a href="https://facebook.com/fitnesscrew" target="_blank">Facebook: @FitnessCrew</a></p>
+                <p><a href="https://twitter.com/fitnesscrew" target="_blank">Twitter: @FitnessCrew</a></p>
+                <p><a href="https://instagram.com/fitnesscrew" target="_blank">Instagram: @FitnessCrew</a></p>
+                <p><a href="https://youtube.com/fitnesscrew" target="_blank">YouTube: @FitnessCrew</a></p>
+            </div>
+
+            <div class="map">
+                <h2>Our Location</h2>
+                <p>Find us on the map below:</p>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.8883852546787!2d-122.08424968468347!3d37.422065379824775!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808fb5a6ed0f2e8b%3A0xf1377d2a02b3d339!2sGoogleplex!5e0!3m2!1sen!2sus!4v1602337001735!5m2!1sen!2sus" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+            </div>
+        </main>
+
+        <footer class="footer">
+            <p>&copy; 2024 The Fitness Crew. All rights reserved.</p>
+            <p>Your journey to fitness starts here. Join our community and stay motivated every step of the way!</p>
+        </footer>
+    </div>
+<script src="contact.js" defer></script>
+</body>
+
+</html>

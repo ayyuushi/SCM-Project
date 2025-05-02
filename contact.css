@@ -1,0 +1,245 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #000;
+    color: #FFD700;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+.header {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #222;
+    border-bottom: 2px solid #FFD700;
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 3rem;
+    color: #FFD700;
+    animation: fadeIn 2s ease-in-out;
+}
+
+.header p {
+    font-size: 1.2rem;
+    color: #fff;
+    animation: fadeIn 3s ease-in-out;
+}
+
+.main-content {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding: 20px;
+    flex-wrap: wrap;
+}
+
+.contact-form, .contact-info {
+    background-color: #333;
+    border: 2px solid #FFD700;
+    border-radius: 10px;
+    padding: 20px;
+    width: 300px;
+    margin: 20px;
+    color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    animation: slideIn 2s ease-in-out;
+}
+
+.contact-form h2, .contact-info h2 {
+    color: #FFD700;
+    margin-bottom: 10px;
+}
+
+.contact-form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.contact-form input, .contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #222;
+    color: #FFD700;
+}
+
+.contact-form button {
+    background-color: #FFD700;
+    color: #000;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.contact-form button:hover {
+    background-color: #fff;
+}
+
+.contact-info p {
+    margin: 10px 0;
+    font-size: 1rem;
+    color: #fff;
+}
+
+.footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #222;
+    border-top: 2px solid #FFD700;
+    color: #FFD700;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateY(50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #000;
+    color: #FFD700;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+.header {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #222;
+    border-bottom: 2px solid #FFD700;
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 3rem;
+    color: #FFD700;
+    animation: fadeIn 2s ease-in-out;
+}
+
+.header p {
+    font-size: 1.2rem;
+    color: #fff;
+    animation: fadeIn 3s ease-in-out;
+}
+
+.main-content {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding: 20px;
+    flex-wrap: wrap;
+}
+
+.contact-form, .contact-info, .social-media {
+    background-color: #333;
+    border: 2px solid #FFD700;
+    border-radius: 10px;
+    padding: 20px;
+    width: 300px;
+    margin: 20px;
+    color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    animation: slideIn 2s ease-in-out;
+}
+
+.contact-form h2, .contact-info h2, .social-media h2 {
+    color: #FFD700;
+    margin-bottom: 10px;
+}
+
+.contact-form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.contact-form input, .contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #222;
+    color: #FFD700;
+}
+
+.contact-form button {
+    background-color: #FFD700;
+    color: #000;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.contact-form button:hover {
+    background-color: #fff;
+}
+
+.contact-info p, .social-media p {
+    margin: 10px 0;
+    font-size: 1rem;
+    color: #fff;
+}
+
+.social-media a {
+    color: #FFD700;
+    text-decoration: none;
+}
+
+.social-media a:hover {
+    text-decoration: underline;
+}
+
+.footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #222;
+    border-top: 2px solid #FFD700;
+    color: #FFD700;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateY(50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
